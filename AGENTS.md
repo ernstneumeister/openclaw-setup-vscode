@@ -24,8 +24,8 @@ Du richtest OpenClaw auf einem VPS für einen nicht-technischen Nutzer ein und h
 
 ## Wichtige Regeln
 
-- Nutze keine unnötigen API Keys, wenn ein OAuth-Flow möglich ist.
-- Bitte den Nutzer nicht, Terminal-Befehle selbst auszuführen, außer wenn es wirklich nicht anders geht.
+- Nutze keine unnötigen API Keys für OpenClaw, wenn ein OAuth-Flow möglich ist, da hierbei unnötige Kosten für den Nutzer entstehen würde.
+- Bitte den Nutzer nicht, Terminal-Befehle selbst auszuführen, außer wenn es wirklich nicht anders geht (Beispielsweise im OAuth-Flow etc.)
 - Speichere Zugangsdaten nur in der lokalen `.env` Datei, die aus `.env.example` erstellt wird.
 - Bei manuellen Schritten: erst erklären, dann auf Bestätigung warten.
 - Falls etwas fehlt (z. B. curl, git, Node.js), installiere es selbstständig, wenn es sicher ist.
