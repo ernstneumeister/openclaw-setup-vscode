@@ -145,13 +145,13 @@ Wenn etwas schiefgeht, sage mir Bescheid. Ansonsten melde dich, wenn du fertig b
 
 ## Schritt 5: OpenClaw Auth einrichten
 
-Für OpenClaw soll bevorzugt **OpenAI Codex OAuth** verwendet werden.
+Für OpenClaw soll bevorzugt ein OAuth-Flow verwendet werden, wenn dieser verfügbar ist.
 
 Wichtig:
 - Nutze keinen unnötigen API-Key-Flow, wenn OAuth möglich ist.
 - Wenn für den Login ein Browser nötig ist, leite mich sauber durch den Schritt.
 - Falls OpenClaw den OAuth-Flow direkt starten kann, nutze bevorzugt diesen Weg.
-- Ziel ist, dass OpenClaw am Ende mit `openai-codex/gpt-5.4` oder einem neueren stabilen Codex-Modell läuft.
+- Ziel ist, dass OpenClaw am Ende mit einem stabilen, aktuellen Modell läuft.
 
 Prüfe danach mit einem passenden OpenClaw-Befehl, ob Auth und Modell korrekt eingerichtet sind.
 
@@ -184,8 +184,11 @@ Ich konfiguriere dann Telegram auf dem Server und starte den Dienst.
 Erledige den Rest:
 
 1. **Dashboard-Token** auslesen und in `.env` eintragen
-2. falls sinnvoll ein kleines **Dashboard-Launcher-Script** im Projektordner anlegen
-3. wichtige Infos im Projektordner aktuell halten
+2. **OpenClaw Dashboard-Launcher-Script erstellen** und im Projektordner in einem Unterordner `openclaw-dashboard` ablegen
+3. die Projektdokumentation mit allen relevanten Infos befüllen, insbesondere:
+   - Workspace: `/root/clawd`
+   - Config: `/root/.openclaw/openclaw.json`
+   - Service-Name und wie man ihn startet/stoppt
 4. **Sicherheits-Check** durchführen:
    - nur Port `2222` von außen erreichbar
    - keine unerwarteten Dienste
