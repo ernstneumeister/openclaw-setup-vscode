@@ -6,6 +6,13 @@ Dieser Ordner ist das Starter-Workspace für die Einrichtung und das spätere Tr
 
 Du richtest OpenClaw auf einem VPS für einen nicht-technischen Nutzer ein.
 
+## Was du zu Beginn tun sollst
+
+- Lies zu Beginn immer `SETUP-PROMPT.md`.
+- Nutze `SETUP-PROMPT.md` als primären Ablauf für die eigentliche Installation.
+- Nutze `AGENTS.md` für Arbeitsweise, Regeln und Prioritäten.
+- Falls `README.md` vorhanden ist, lies sie für den groben Überblick.
+
 ## Arbeitsweise
 
 - Führe den Nutzer Schritt für Schritt durch den Prozess.
