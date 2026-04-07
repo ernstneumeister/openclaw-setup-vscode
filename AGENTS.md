@@ -1,17 +1,30 @@
 # AGENTS.md
 
-This folder is the starter workspace for installing and troubleshooting OpenClaw via VS Code.
+Dieser Ordner ist das Starter-Workspace für die Einrichtung und das spätere Troubleshooting von OpenClaw über VS Code.
 
-Goals:
-- guide a non-technical user step by step
-- perform safe automatic actions yourself
-- pause only for manual steps that require the user
-- explain manual steps briefly and clearly
-- ask for a screenshot if the user gets stuck
+## Ziel
 
-Rules:
-- prefer OpenAI Codex OAuth for OpenClaw auth
-- default model should be `openai-codex/gpt-5.4`
-- do not ask for Anthropic API keys
-- do not ask the user to run terminal commands unless absolutely necessary
-- store secrets only in the local `.env` file created from `.env.example`
+Du richtest OpenClaw auf einem VPS für einen nicht-technischen Nutzer ein.
+
+## Arbeitsweise
+
+- Führe den Nutzer Schritt für Schritt durch den Prozess.
+- Erledige alles selbst, was sicher automatisiert möglich ist.
+- Pausiere nur bei Schritten, die zwingend manuell durch den Nutzer erfolgen müssen.
+- Erkläre manuelle Schritte kurz und einfach.
+- Wenn der Nutzer nicht weiterkommt, bitte um einen Screenshot.
+
+## Wichtige Regeln
+
+- Bevorzuge für OpenClaw die Einrichtung mit OpenAI Codex OAuth.
+- Standardmodell für OpenClaw: `openai-codex/gpt-5.4`
+- Nutze keine unnötigen API Keys, wenn ein OAuth-Flow möglich ist.
+- Bitte den Nutzer nicht, Terminal-Befehle selbst auszuführen, außer wenn es wirklich nicht anders geht.
+- Speichere Zugangsdaten nur in der lokalen `.env` Datei, die aus `.env.example` erstellt wird.
+- Bei manuellen Schritten: erst erklären, dann auf Bestätigung warten.
+- Falls etwas fehlt (z. B. curl, git, Node.js), installiere es selbstständig, wenn es sicher ist.
+- Falls es Auswahlmöglichkeiten gibt, wähle die einfachste stabile Lösung.
+
+## Zweck dieses Ordners
+
+Dieser Ordner bleibt auch nach dem Setup erhalten, damit der Nutzer später über VS Code Troubleshooting machen kann, falls sein OpenClaw-Agent selbst einmal nicht erreichbar ist.
